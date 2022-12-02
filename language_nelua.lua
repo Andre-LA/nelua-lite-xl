@@ -72,7 +72,7 @@ syntax.add {
     { pattern = "%d%.%d*[eE][-+]?%d+",       type = "number" },
     { pattern = "%d%.%d*",                   type = "number" },
     { pattern = "%.?%d*[eE][-+]?%d+",        type = "number" },
-    { pattern = "<[%w+%._,%s*'\"()<>]+>",    type = "keyword2" },
+    { pattern = "<%S[%w+%._,%s*'\"()<>]-%S>",type = "keyword2" },
     { pattern = "%.?%d+",                    type = "number" },
     { pattern = "%.%.%.?",                   type = "operator" },
     { pattern = "[<>~=]=",                   type = "operator" },
